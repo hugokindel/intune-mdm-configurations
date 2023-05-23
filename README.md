@@ -1,4 +1,4 @@
-# MDM Intune Configurations
+# Intune MDM Configurations
 
 Contains the scripts and configurations related to Intune for all currently supported operating systems (macOS, Windows).  
 Disclaimer : Some script have been REDACTED to remove private data. In which case they will not work as is and will need to be modified/adapted.
