@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AllowedSystemExtensions</key>
+			<dict>
+				<key>GUNFMW623Y</key>
+				<array>
+					<string>com.bitdefender.cst.net.dci.dci-network-extension</string>
+				</array>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>Bitdefender System Extension Policy</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.system-extension-policy.889EB0F1-20DE-4A91-8463-3304D7567438</string>
+			<key>PayloadType</key>
+			<string>com.apple.system-extension-policy</string>
+			<key>PayloadUUID</key>
+			<string>58730236-D38C-40D0-AE00-55230891B72A</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Bitdefender Privacy Preferences Policy Control</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.TCC.configuration-profile-policy.E07DFB5A-04BB-4A01-BB83-E44EB5680D4F</string>
+			<key>PayloadType</key>
+			<string>com.apple.TCC.configuration-profile-policy</string>
+			<key>PayloadUUID</key>
+			<string>E07DFB5A-04BB-4A01-BB83-E44EB5680D4F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Services</key>
+			<dict>
+				<key>SystemPolicyAllFiles</key>
+				<array>
+					<dict>
+						<key>Allowed</key>
+						<true/>
+						<key>CodeRequirement</key>
+						<string>anchor apple generic and identifier "com.bitdefender.epsecurity.BDLDaemonApp" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = GUNFMW623Y)</string>
+						<key>Identifier</key>
+						<string>com.bitdefender.epsecurity.BDLDaemonApp</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+						<key>StaticCode</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Allowed</key>
+						<true/>
+						<key>CodeRequirement</key>
+						<string>identifier "com.bitdefender.EndpointSecurityforMac" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = GUNFMW623Y</string>
+						<key>Identifier</key>
+						<string>com.bitdefender.EndpointSecurityforMac</string>
+						<key>IdentifierType</key>
+						<string>bundleID</string>
+						<key>StaticCode</key>
+						<false/>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>FilterPacketProviderBundleIdentifier</key>
+			<string>com.bitdefender.cst.net.dci.dci-network-extension</string>
+			<key>FilterPacketProviderDesignatedRequirement</key>
+			<string>anchor apple generic and identifier "com.bitdefender.cst.net.dci.dci-network-extension" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = GUNFMW623Y)</string>
+			<key>FilterPackets</key>
+			<true/>
+			<key>FilterType</key>
+			<string>Plugin</string>
+			<key>PayloadDisplayName</key>
+			<string>Bitdefender Web Content Filter</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.webcontent-filter.FF5EDBB5-56E6-4860-988F-4F8D857EED94</string>
+			<key>PayloadType</key>
+			<string>com.apple.webcontent-filter</string>
+			<key>PayloadUUID</key>
+			<string>D2129BCB-4E2F-4A04-8529-95AFDECE0B4A</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PluginBundleID</key>
+			<string>com.bitdefender.epsecurity.BDLDaemonApp</string>
+			<key>UserDefinedName</key>
+			<string>Bitdefender</string>
+		</dict>
+		<dict>
+			<key>NotificationSettings</key>
+			<array>
+				<dict>
+					<key>BadgesEnabled</key>
+					<true/>
+					<key>BundleIdentifier</key>
+					<string>com.bitdefender.EndpointSecurityforMac</string>
+					<key>CriticalAlertEnabled</key>
+					<false/>
+					<key>NotificationsEnabled</key>
+					<true/>
+					<key>ShowInCarPlay</key>
+					<true/>
+					<key>ShowInLockScreen</key>
+					<true/>
+					<key>ShowInNotificationCenter</key>
+					<true/>
+					<key>SoundsEnabled</key>
+					<true/>
+				</dict>
+			</array>
+			<key>PayloadDisplayName</key>
+			<string>Notifications</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.notificationsettings.28B57774-20E5-4967-BDED-0C3CA60D360F</string>
+			<key>PayloadType</key>
+			<string>com.apple.notificationsettings</string>
+			<key>PayloadUUID</key>
+			<string>28B57774-20E5-4967-BDED-0C3CA60D360F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Adds the policies needed for a zero-click installation and configuration process of Bitdefender</string>
+	<key>PayloadDisplayName</key>
+	<string>Authorizations for Bitdefender</string>
+	<key>PayloadIdentifier</key>
+	<string>C317C695-E5DE-4CB1-A925-02A61D41602A</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>5A1019E3-90AB-49BC-865E-25CD8CA12484</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

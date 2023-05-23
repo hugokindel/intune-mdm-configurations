@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNS</key>
+			<dict>
+				<key>SearchDomains</key>
+				<array>
+					<string>Add Domain</string>
+				</array>
+				<key>ServerAddresses</key>
+				<array>
+					<string>Add DNS 1</string>
+					<string>Add DNS 2</string>
+				</array>
+			</dict>
+			<key>IPSec</key>
+			<dict>
+				<key>AuthenticationMethod</key>
+				<string>SharedSecret</string>
+				<key>SharedSecret</key>
+				<data>
+					Add Shared Secret Here
+				</data>
+			</dict>
+			<key>IPv4</key>
+			<dict>
+				<key>OverridePrimary</key>
+				<integer>1</integer>
+			</dict>
+			<key>PPP</key>
+			<dict>
+				<key>CommRemoteAddress</key>
+				<string>Add IP</string>
+			</dict>
+			<key>PayloadDisplayName</key>
+			<string>VPN</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.vpn.managed.BC712CEF-B319-41B9-89AC-4960128AF7FF</string>
+			<key>PayloadType</key>
+			<string>com.apple.vpn.managed</string>
+			<key>PayloadUUID</key>
+			<string>072213F3-7942-42AE-BDDC-6C538725A3B2</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>UserDefinedName</key>
+			<string>VPN</string>
+			<key>VPNType</key>
+			<string>L2TP</string>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>VPN</string>
+	<key>PayloadIdentifier</key>
+	<string>DB75DF0F-9E93-421A-9144-B5C29C0B9816</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>6F5E13E5-6C9F-40FD-9710-70698EBECD67</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Redirect logs
+exec 1>> "/var/log/add_account_admin_installer.log" 2>&1
+
+# Checks if the user already exists.
+if id "admin" &>/dev/null; then
+    echo 'User already exists.'
+    exit 0
+fi
+
+# Gets the working directory of this script.
+WORK_DIR=$(dirname "$0")
+
+# Tries to create the user record using the Open Directory API (Obj-C/Swift).
+"$WORK_DIR/admin" "$WORK_DIR/admin.plist"
+
+# There was an error creating the user, exit.
+if [[ "$?" -ne 0 ]]; then
+    exit 1
+fi
+
+# Adds the user record to the admin group.
+/usr/sbin/dseditgroup -o edit -a "admin" -t user admin
+echo "User added to admin group."
+
+exit 0

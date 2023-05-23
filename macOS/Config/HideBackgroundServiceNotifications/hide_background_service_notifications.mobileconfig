@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Payload for Background Item Management</string>
+			<key>PayloadDisplayName</key>
+			<string>Background Item Management</string>
+			<key>PayloadIdentifier</key>
+			<string>com.example.56EE8C1E-9C20-483B-
+                AD0E-9558E6091035.privacy.04102481-C1F1-44F2-B548-
+                E0B554890493</string>
+			<key>PayloadOrganization</key>
+			<string>Enterprise</string>
+			<key>PayloadType</key>
+			<string>com.apple.servicemanagement</string>
+			<key>PayloadUUID</key>
+			<string>299556A5-1FB0-4277-BB27-98B1254E775C</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Rules</key>
+			<array>
+				<dict>
+					<key>RuleType</key>
+					<string>Label</string>
+					<key>RuleValue</key>
+					<string>Bitdefender SRL</string>
+				</dict>
+				<dict>
+					<key>RuleType</key>
+					<string>TeamIdentifier</string>
+					<key>RuleValue</key>
+					<string>GUNFMW623Y</string>
+				</dict>
+				<dict>
+					<key>RuleType</key>
+					<string>TeamIdentifier</string>
+					<key>RuleValue</key>
+					<string>UBF8T346G9</string>
+				</dict>
+				<dict>
+					<key>RuleType</key>
+					<string>LabelPrefix</string>
+					<key>RuleValue</key>
+					<string>Microsoft</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Hide Background Service Notifications</string>
+	<key>PayloadIdentifier</key>
+	<string>02867111-EBA2-4A19-BF33-372F45988B36</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>BBF82282-38C4-4BBF-9FA0-33F85C4DF812</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
